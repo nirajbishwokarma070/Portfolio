@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#12151D"/>
+  <rect x="72" y="64" width="816" height="472" rx="12" fill="#0B0D12" stroke="#262A35"/>
+  <rect x="72" y="64" width="816" height="58" rx="12" fill="#171B25"/>
+  <text x="108" y="100" fill="#8B9CF6" font-family="Arial" font-size="22" font-weight="700">CineGo</text>
+  <rect x="116" y="154" width="728" height="138" rx="8" fill="#171B25" stroke="#262A35"/>
+  <rect x="142" y="178" width="220" height="90" rx="6" fill="#262A35"/>
+  <rect x="390" y="184" width="210" height="18" rx="9" fill="#F5F5F5"/>
+  <rect x="390" y="220" width="322" height="8" rx="4" fill="#A1A1AA"/>
+  <rect x="390" y="244" width="250" height="8" rx="4" fill="#3A3F4D"/>
+  <rect x="116" y="320" width="220" height="168" rx="8" fill="#171B25"/>
+  <rect x="360" y="320" width="220" height="168" rx="8" fill="#171B25"/>
+  <rect x="604" y="320" width="240" height="168" rx="8" fill="#171B25"/>
+  <rect x="140" y="344" width="172" height="92" rx="6" fill="#262A35"/>
+  <rect x="384" y="344" width="172" height="92" rx="6" fill="#262A35"/>
+  <rect x="628" y="344" width="192" height="92" rx="6" fill="#262A35"/>
+</svg>

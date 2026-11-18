@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0B0D12;
+  --secondary-background: #12151D;
+  --primary-text: #F5F5F5;
+  --secondary-text: #A1A1AA;
+  --accent: #8B9CF6;
+  --border: #262A35;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-secondary: var(--secondary-text);
+  --color-secondary-bg: var(--secondary-background);
+  --color-primary: var(--primary-text);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-secondary-text: var(--secondary-text);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--primary-text);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(139, 156, 246, 0.28);
+  color: var(--primary-text);
+}
+
+.section-border {
+  border-top: 1px solid var(--border);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform 180ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.reveal {
+  animation: reveal 700ms ease-out both;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
